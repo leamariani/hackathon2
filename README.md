@@ -40,6 +40,7 @@ climate-analyzer-pro/
     └── logs/
 
 3) Structure des modules
+
 | Fichier                    | Rôle                                               |
 | -------------------------- | -------------------------------------------------- |
 | `core_modules.py`          | Configuration centralisée (LoRA, hyper-paramètres) |
