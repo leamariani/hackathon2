@@ -14,73 +14,50 @@ Les étapes principales :
 - Évaluation des performances
 - Visualisation des tendances et des sentiments exprimés
 
-STRUCTURE DU PROJET
--------------------
-📁 hackathon2_karim_lea_llm_finetuned_climate_final.ipynb : 
-    Notebook principal contenant l’ensemble du code du projet
+1) requirements.txt
+# Core ML & NLP
+torch>=2.1.0
+transformers>=4.36.0
+datasets>=2.16.0
+tokenizers>=0.15.0
+peft>=0.7.0
+accelerate>=0.25.0
 
-📁 data/ : 
-    Répertoire à créer pour stocker les données (non incluses ici)
+# Embedding & Search
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.0
+langchain>=0.1.0
+langchain-community>=0.0.10
 
-📁 modules internes :
-    - core_modules
-    - data_modules
-    - model_modules
-    - qa_modules
-    - visualization_modules
-    Ces fichiers Python doivent être présents localement (non installables via pip)
+# Web Framework
+streamlit>=1.29.0
+streamlit-authenticator>=0.2.0
 
-📄 README_REQUIREMENTS.txt : 
-    Ce fichier (documentation + dépendances)
+# Data Processing
+pandas>=1.5.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.17.0
 
-TECHNOLOGIES UTILISÉES
------------------------
-- Python (3.8+)
-- NLP / IA : Hugging Face Transformers, PEFT, Sentence Transformers
-- Analyse de données : Pandas, NumPy, Scikit-learn
-- Visualisation : Matplotlib, Seaborn
-- Divers : LangChain, Streamlit, Faiss, Pyngrok
+# Evaluation & Metrics
+rouge-score>=0.1.2
+nltk>=3.8
+evaluate>=0.4.0
 
-INSTALLATION & UTILISATION
----------------------------
-1. Cloner le dépôt GitHub :
-   git clone https://github.com/ton-repo/climate-llm-hackathon.git
-   cd climate-llm-hackathon
+# Utilities
+feedparser>=6.0.0
+schedule>=1.2.0
+pyngrok>=7.0.0
+python-dotenv>=1.0.0
+tqdm>=4.65.0
+colorama>=0.4.6
 
-2. Installer les dépendances :
-   pip install -r requirements.txt
+2) System Requirements
 
-3. Lancer le notebook :
-   jupyter notebook hackathon2_karim_lea_llm_finetuned_climate_final.ipynb
-
-4. (Facultatif) Lancer une interface Streamlit :
-   streamlit run app.py
-
-AUTEURS
--------
-👥 Karim & Léa  
-📅 Hackathon Juillet 2025
-
----
-
-📦 REQUIREMENTS (Dépendances Python)
-------------------------------------
-
-datasets
-faiss-cpu
-feedparser
-langchain
-matplotlib
-nltk
-numpy
-pandas
-peft
-pyngrok
-rouge-score
-schedule
-seaborn
-sentence-transformers
-scikit-learn
-streamlit
-torch
-transformers
+    Python: 3.9+
+    RAM: 4GB minimum (8GB recommended)
+    Storage: 2GB free space
+    OS: Linux / macOS / Windows
+    Optional: CUDA 11.8+ for GPU acceleration
