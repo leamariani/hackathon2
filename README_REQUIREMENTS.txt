@@ -1,20 +1,5 @@
-
-CLIMATE LLM FINE-TUNING – HACKATHON PROJECT
-===========================================
-
-
-OBJECTIFS
----------
-Ce projet a pour but d'exploiter la puissance des modèles de langage (LLM) pour analyser les discussions publiques sur le climat à partir de données issues de Reddit.
-
-Les étapes principales :
-- Extraction et nettoyage de discussions Reddit sur le thème du climat
-- Préparation des données pour l'entraînement
-- Fine-tuning léger d’un modèle de langage (type DistilBERT)
-- Évaluation des performances
-- Visualisation des tendances et des sentiments exprimés
-
 1) requirements.txt
+
 # Core ML & NLP
 torch>=2.1.0
 transformers>=4.36.0
@@ -56,8 +41,8 @@ colorama>=0.4.6
 
 2) System Requirements
 
-    Python: 3.9+
-    RAM: 4GB minimum (8GB recommended)
-    Storage: 2GB free space
-    OS: Linux / macOS / Windows
-    Optional: CUDA 11.8+ for GPU acceleration
+Python: 3.9+
+RAM: 4GB minimum (8GB recommended)
+Storage: 2GB free space
+OS: Linux / macOS / Windows
+Optional: CUDA 11.8+ for GPU acceleration
