@@ -1,4 +1,4 @@
-Testez avec le subsampled.csv !!!
+# Testez avec le subsampled.csv !!!
 
 Climate Analyzer Pro est une plate-forme tout-en-un d’analyse, de classification et de question-réponse sur le changement climatique.
 Elle combine :
@@ -9,7 +9,7 @@ Elle combine :
     📊 Dashboard Streamlit ultra-rapide et 100 % cloud-ready (Colab, ngrok, Docker)
     🔍 Évaluation complète : accuracy, F1, BLEU, ROUGE, matrices de confusion…
 
-1) Fonctionnalités
+# 1) Fonctionnalités
 
 Fonctionnalité	Description
 🚀 Pipeline Complet	Upload CSV → entraînement LoRA → sauvegarde & déploiement en 1 clic
@@ -20,7 +20,7 @@ Fonctionnalité	Description
 ⚡ Optimisations	Caching LRU, index FAISS, tokenisation batch, GPU/CPU auto
 🛠️ Installation rapide
 
-2) Structure du projet
+## 📁 Project structure
 
 climate-analyzer-pro/
 ├── streamlit_app.py           # Interface principale Streamlit
@@ -41,7 +41,7 @@ climate-analyzer-pro/
     │   └── trainer_state.json
     └── logs/
 
-3) Structure des modules
+# 3) Structure des modules
 
 | Fichier                    | Rôle                                               |
 | -------------------------- | -------------------------------------------------- |
@@ -55,8 +55,9 @@ climate-analyzer-pro/
 | `streamlit_app.py`         | Interface principale (multi-onglets)               |
 | `setup_pipeline.py`        | Script d’installation des dépendances              |
 
-4) requirements.txt
-# Core ML & NLP
+# 4) requirements.txt
+
+## Core ML & NLP
 torch>=2.1.0
 transformers>=4.36.0
 datasets>=2.16.0
@@ -95,7 +96,7 @@ python-dotenv>=1.0.0
 tqdm>=4.65.0
 colorama>=0.4.6
 
-5) System Requirements
+# 5) System Requirements
 
     Python: 3.9+
     RAM: 4GB minimum (8GB recommended)
@@ -103,7 +104,7 @@ colorama>=0.4.6
     OS: Linux / macOS / Windows
     Optional: CUDA 11.8+ for GPU acceleration
    
-6) Automatisation RSS
+# 6) Automatisation RSS
 
     Planifiée tous les jours à 09h00
     Sources configurées :
@@ -112,7 +113,7 @@ colorama>=0.4.6
         https://unfccc.int/news/rss.xml
     Ajoute automatiquement les nouveaux articles (chunk 400 caractères) avec catégorie rss_news.
 
-7) Métriques & évaluation
+# 7) Métriques & évaluation
 
 | Métrique          | Outil                                  |
 | ----------------- | -------------------------------------- |
@@ -122,7 +123,7 @@ colorama>=0.4.6
 | **Similarité**    | Cosine FAISS (normalisée)              |
 
 
-8) Q&A :
+# 8) Q&A :
 Exemples de questions
 
 | Question                                                            | Type de réponse              |
@@ -133,7 +134,7 @@ Exemples de questions
 | *Derniers articles sur le GIEC ?*                                   | RSS + filtrage date          |
 
 
-9) Paramètres avancés
+# 9) Paramètres avancés
 
 | Paramètre              | Défaut | Description           |
 | ---------------------- | ------ | --------------------- |
@@ -143,8 +144,8 @@ Exemples de questions
 | `top_k`                | 5      | Nombre de réponses    |
 | `batch_size`           | 16     | Taille batch training |
 
-10) Dépannage
-11) 
+# 10) Dépannage
+
 | Problème                  | Solution                                        |
 | ------------------------- | ----------------------------------------------- |
 | `CUDA out of memory`      | Réduire `batch_size` ou `max_length`            |
@@ -152,10 +153,10 @@ Exemples de questions
 | Trop lent sur CPU         | Passer à `device='cuda'` dans `qa_modules.py`   |
 | RSS ne se met pas à jour  | Vérifier la connectivité ou lancer manuellement |
 
-Licence
+# Licence
 MIT – voir LICENSE
 
-Contribution
+# Contribution
 Les PR et issues sont les bienvenus !
 Ajoutez simplement +1 sur une issue ou proposez une amélioration via une Pull Request.
 Made with ❤️ by the Climate AI Community
