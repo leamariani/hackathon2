@@ -58,56 +58,9 @@ climate-analyzer-pro/
 | `streamlit_app.py`         | Interface principale (multi-onglets)               |
 | `setup_pipeline.py`        | Script d’installation des dépendances              |
 
-# 4) requirements.txt
 
-## Core ML & NLP
-torch>=2.1.0
-transformers>=4.36.0
-datasets>=2.16.0
-tokenizers>=0.15.0
-peft>=0.7.0
-accelerate>=0.25.0
-
-# Embedding & Search
-sentence-transformers>=2.2.0
-faiss-cpu>=1.7.0
-langchain>=0.1.0
-langchain-community>=0.0.10
-
-# Web Framework
-streamlit>=1.29.0
-streamlit-authenticator>=0.2.0
-
-# Data Processing
-pandas>=1.5.0
-numpy>=1.24.0
-scikit-learn>=1.3.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-plotly>=5.17.0
-
-# Evaluation & Metrics
-rouge-score>=0.1.2
-nltk>=3.8
-evaluate>=0.4.0
-
-# Utilities
-feedparser>=6.0.0
-schedule>=1.2.0
-pyngrok>=7.0.0
-python-dotenv>=1.0.0
-tqdm>=4.65.0
-colorama>=0.4.6
-
-# 5) System Requirements
-
-    Python: 3.9+
-    RAM: 4GB minimum (8GB recommended)
-    Storage: 2GB free space
-    OS: Linux / macOS / Windows
-    Optional: CUDA 11.8+ for GPU acceleration
    
-# 6) Automatisation RSS
+# 4) Automatisation RSS
 
     Planifiée tous les jours à 09h00
     Sources configurées :
@@ -116,7 +69,7 @@ colorama>=0.4.6
         https://unfccc.int/news/rss.xml
     Ajoute automatiquement les nouveaux articles (chunk 400 caractères) avec catégorie rss_news.
 
-# 7) Métriques & évaluation
+# 5) Métriques & évaluation
 
 | Métrique          | Outil                                  |
 | ----------------- | -------------------------------------- |
@@ -126,7 +79,7 @@ colorama>=0.4.6
 | **Similarité**    | Cosine FAISS (normalisée)              |
 
 
-# 8) Q&A :
+# 6) Q&A :
 Exemples de questions
 
 | Question                                                            | Type de réponse              |
@@ -137,7 +90,7 @@ Exemples de questions
 | *Derniers articles sur le GIEC ?*                                   | RSS + filtrage date          |
 
 
-# 9) Paramètres avancés
+# 7) Paramètres avancés
 
 | Paramètre              | Défaut | Description           |
 | ---------------------- | ------ | --------------------- |
@@ -147,7 +100,7 @@ Exemples de questions
 | `top_k`                | 5      | Nombre de réponses    |
 | `batch_size`           | 16     | Taille batch training |
 
-# 10) Dépannage
+# 8) Dépannage
 
 | Problème                  | Solution                                        |
 | ------------------------- | ----------------------------------------------- |
