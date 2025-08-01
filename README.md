@@ -9,19 +9,21 @@ Elle combine :
     📊 Dashboard Streamlit ultra-rapide et 100 % cloud-ready (Colab, ngrok, Docker)
     🔍 Évaluation complète : accuracy, F1, BLEU, ROUGE, matrices de confusion…
 
-# 1) Fonctionnalités
+## 1) Fonctionnalités
 
-Fonctionnalité	Description
-🚀 Pipeline Complet	Upload CSV → entraînement LoRA → sauvegarde & déploiement en 1 clic
-❓ Q&A Avancée	Recherche sémantique, par mots-clés, par catégorie ou hybride avec fallback
-📰 RSS Auto-Update	Ajoute quotidiennement les derniers articles climatiques à la base de connaissances
-📈 Visualisations	Courbes d’entraînement, matrices de confusion, distributions, BLEU/ROUGE
-📚 Gestion des Connaissances	Ajout / suppression / catégorisation via interface cliquable
-⚡ Optimisations	Caching LRU, index FAISS, tokenisation batch, GPU/CPU auto
-🛠️ Installation rapide
+| Emoji | Fonctionnalité | Description |
+|-------|----------------|-------------|
+| 🚀 | **Pipeline complet** | Upload CSV → entraînement LoRA → sauvegarde & déploiement en 1 clic |
+| ❓ | **Q&A avancée** | Recherche sémantique, mots-clés, catégorie ou hybride + fallback |
+| 📰 | **RSS auto-update** | Articles climatiques ajoutés quotidiennement à la base de connaissances |
+| 📈 | **Visualisations** | Courbes d’entraînement, matrices de confusion, BLEU/ROUGE… |
+| 📚 | **Gestion connaissances** | Ajout / suppression / catégorisation via interface cliquable |
+| ⚡ | **Optimisations** | LRU cache, FAISS, batch tokenisation, GPU/CPU auto |
+| 🛠️ | **Installation rapide** | `pip install -r requirements.txt && streamlit run streamlit_app.py` |
 
-## 📁 Project structure
+## 2) 📁 Structure du projet
 
+```
 climate-analyzer-pro/
 ├── streamlit_app.py           # Interface principale Streamlit
 ├── core_modules.py            # Configuration centrale (LoRA, hyper-paramètres)
@@ -40,6 +42,7 @@ climate-analyzer-pro/
     │   ├── pytorch_model.bin
     │   └── trainer_state.json
     └── logs/
+```
 
 # 3) Structure des modules
 
